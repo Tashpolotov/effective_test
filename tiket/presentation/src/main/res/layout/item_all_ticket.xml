@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_udobnyi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp"
+        app:cardBackgroundColor="@color/darkBlue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_udob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Самый удобный"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="2dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/const_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_const_all_ticket"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="6 990"
+            android:textSize="22sp"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/sf_pro_display_regular_400"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <ImageView
+            android:id="@+id/img_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_red"
+            app:layout_constraintTop_toBottomOf="@id/tv_price"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_price"
+            app:layout_constraintStart_toEndOf="@id/img_red"
+            android:text="03:15 - 07:10"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro_display_regular_400"
+            />
+
+        <TextView
+            android:id="@+id/tv_vko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_time"
+            app:layout_constraintStart_toEndOf="@id/img_red"
+            android:text="VKO"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/gray6"
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro_display_regular_400"
+            />
+
+        <TextView
+            android:id="@+id/tv_aer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_time"
+            app:layout_constraintStart_toEndOf="@id/tv_vko"
+            android:text="AER"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/gray6"
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro_display_regular_400"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_arrive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_price"
+            app:layout_constraintStart_toEndOf="@id/tv_time"
+            android:text="4ч в пути / Без пересадок"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/sf_pro_display_regular_400"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

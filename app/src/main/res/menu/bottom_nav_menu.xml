@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_tiket"
+        android:title="@string/tiket"
+        android:icon="@drawable/ic_tiket"
+
+        />
+
+    <item
+        android:id="@+id/nav_hotel"
+        android:title="@string/hotel"
+        android:icon="@drawable/ic_hotel"
+        />
+
+    <item
+        android:id="@+id/nav_breafly"
+        android:title="@string/breafly"
+        android:icon="@drawable/ic_breafly"
+
+        />
+
+    <item
+        android:id="@+id/nav_subscriptions"
+        android:title="@string/subscriptions"
+        android:icon="@drawable/ic_subscription"
+
+        />
+
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_profile"
+        />
+</menu>

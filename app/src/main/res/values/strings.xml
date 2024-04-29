@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">effective_test</string>
+    <string name="tiket">Авиабилеты</string>
+    <string name="hotel">Отель</string>
+    <string name="breafly">короче</string>
+    <string name="subscriptions">подписки</string>
+    <string name="profile">Профиль</string>
+</resources>

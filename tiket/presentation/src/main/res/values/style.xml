@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomSheetDialogTheme" parent="Theme.Material3.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+    <style name="NameLineTextStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">144dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="fontFamily">@font/sf_pro_display_regular_400</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="TimeLineTextStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="fontFamily">@font/sf_pro_display_regular_400</item>
+    </style>
+
+
+    <style name="PriceLineTextStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="fontFamily">@font/sf_pro_display_regular_400</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+
+    <style name="ImgPrice" parent="Widget.Material3.MaterialTimePicker.ImageButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.1</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+     
+
+</resources>

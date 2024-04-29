@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_tiket"
+    app:startDestination="@id/tiketFragment">
+
+    <fragment
+        android:id="@+id/tiketFragment"
+        android:name="com.example.presentation.TiketFragment"
+        android:label="fragment_tiket"
+        tools:layout="@layout/fragment_tiket" >
+        <action
+            android:id="@+id/action_tiketFragment_to_mockFragment"
+            app:destination="@id/mockFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mockFragment"
+        android:name="com.example.presentation.MockFragment"
+        android:label="fragment_mock"
+        tools:layout="@layout/fragment_mock" >
+        <action
+            android:id="@+id/action_mockFragment_to_tiketFragment"
+            app:destination="@id/tiketFragment" />
+        <action
+            android:id="@+id/action_mockFragment_to_searchCityFragment"
+            app:destination="@id/searchCityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchCityFragment"
+        android:name="com.example.presentation.SearchCityFragment"
+        android:label="fragment_search_city"
+        tools:layout="@layout/fragment_search_city" >
+        <action
+            android:id="@+id/action_searchCityFragment_to_allTicketFragment"
+            app:destination="@id/allTicketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allTicketFragment"
+        android:name="com.example.presentation.AllTicketFragment"
+        android:label="fragment_all_ticket"
+        tools:layout="@layout/fragment_all_ticket" >
+        <action
+            android:id="@+id/action_allTicketFragment_to_searchCityFragment"
+            app:destination="@id/searchCityFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,19 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sale_tiket">Поиск дешевых авиабилетов</string>
+    <string name="minsk">Минск</string>
+    <string name="where">Куда - Турция</string>
+    <string name="music">Музыкально отлететь</string>
+    <string name="budapesht">Будапешт</string>
+    <string name="view_all">Показать все места</string>
+    <string name="strong">Сложный маршрут</string>
+    <string name="where1">Куда угодно</string>
+    <string name="got">Горячие     билеты</string>
+    <string name="weekend">Выходные</string>
+    <string name="stambul">Стамбул</string>
+    <string name="popular">Популярные направления</string>
+    <string name="sochi">Сочи</string>
+    <string name="phuchet">Phuchet</string>
+    <string name="back">обратно</string>
+</resources>
